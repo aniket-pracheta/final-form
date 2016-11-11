@@ -1,0 +1,17 @@
+.DS_Store
+Resources
+build.log
+build
+npm-debug.log
+tmp
+.map
+.project
+.settings
+Thumbs.db
+
+# Created by https://www.gitignore.io/api/appceleratortitanium
+
+### AppceleratorTitanium ###
+# Build folder and log file
+build/
+build.log

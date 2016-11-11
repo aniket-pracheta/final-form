@@ -1,0 +1,89 @@
+
+ "#window2" : {
+	// backgroundColor:"#d6100f",
+	//layout:"vertical",
+	// //height:"400dp", 
+	backgroundImage:'images/Android_Master_bg.jpg'
+ },
+
+
+".navigation_view":{
+	backgroundColor:"#ff3333",
+	height:"30dp",
+	top:5
+},
+".ass":{
+	color:"white",
+	center:"0dp"
+},
+"#menu_icon" : {
+    font : {
+       fontFamily : "fontawesome-webfont",
+       fontSize : "20sp",    
+   },
+   left:2
+},
+
+".container":{
+	layout:"vertical",
+	top:50
+},
+
+".small_container-1":{
+	top:"10dp",
+	left:"10%",
+	right:"10%",
+	height:"40dp",
+	borderColor:"white",
+	//layout: "horizontal"
+	//backgroundColor:"yellow"
+},
+".radio_container":{
+	top:"10dp",
+	left:"10%",
+	right:"10%",
+	height:"40dp",
+	//borderColor:"white",
+	layout: "horizontal"
+},
+".input":{
+	width:Titanium.UI.FILL,
+	left:"10%",
+	top: "1px",
+	height:"50dp",
+	// backgroundColor:"green",
+	//top:5,
+	//font:{fontsize:"2sp"},
+},
+
+".icon_in_text":{
+	font : {
+       fontFamily : "fontawesome-webfont",
+       fontSize : "20sp",    
+   },
+	left:"3%"
+},
+
+".gender-radio": {
+	width: "33%",
+},
+".gender":{
+	font : {
+       fontFamily : "fontawesome-webfont",
+       fontSize : "19sp",    
+   },
+   left:"5" ,
+   width:"25%",	
+},
+
+"#register":{
+	color:"RED",
+	width:"70%",
+    left:"16%",
+    title:"REGISTER",
+    backgroundColor:"white",
+    borderRadius:5
+
+}
+
+
