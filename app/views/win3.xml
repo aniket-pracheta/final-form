@@ -1,0 +1,5 @@
+<Alloy>
+	<View class="container" id="window3">
+		<Label>successfully registered....!</Label>
+	</View>
+</Alloy>

@@ -1,14 +1,7 @@
 <Alloy>
 	<Window class="container">
-		<View class="mainpage" layout="vertical">
+		<View class="mainpage">
 			<Label onClick="register_page">go to registration page</Label>
-			
-			<TextField id="dob" onClick="getpicker" width="Titanium.UI.FILL"></TextField>
-			<View class="view-container">
-
 	</View>
-			<!-- <Picker id="picker" type="Ti.UI.PICKER_TYPE_DATE" minDate= "2013-02-08 09:30:26 Z" maxDate="2020,11,17" /> -->
-		</View>
-		
 	</Window>
 </Alloy>

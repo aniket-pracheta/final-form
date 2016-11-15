@@ -6,95 +6,80 @@
 		</View>
 		
 			<ScrollView class="container">
-		       <View class="small_container-1">
+		       <View class="small_container-1" id="first">
 		       	    <Label text="\uf007" class="icon_in_text"></Label>
 		       	    <TextField class="input" hintText="First Name" id="first_name"></TextField>
 		       </View>	
 		       
-		        <View class="small_container-1">
+		        <View class="small_container-1" id="second">
 		        	<Label text="\uf007" class="icon_in_text"></Label>
 		       	    <TextField class="input" hintText="Last Name" id="last_name"></TextField>
 		        </View>
 		        
-		         <View class="small_container-1">
+		         <View class="small_container-1" id="third">
 		         	<Label text="\uf023 " class="icon_in_text"></Label>
 		       	    <TextField class="input" hintText="Password" id="password"></TextField>
 		         </View>
 		         
-		         <View class="small_container-1">
+		         <View class="small_container-1" id="fourth">
 		         	<Label text="\uf13e" class="icon_in_text"></Label>
 		       	    <TextField class="input" hintText="Confirm Password" id="re_password"></TextField>
 		         </View>
 		         
-		         <View class="small_container-1">
+		         <View class="small_container-1" id="fifth">
 		         	<Label text="\uf0e0" class="icon_in_text"></Label>
-		       	    <TextField class="input" hintText="Email" id="eamil"></TextField>
+		       	    <TextField class="input" hintText=" Email" id="email"></TextField>
 		         </View>
 		         
-		         <View class="small_container-1">
+		         <View class="small_container-1" id="sixth">
 		         	<Label text="\uf0e0" class="icon_in_text"></Label>
-		       	    <TextField class="input" hintText="Phone Number" id="phone_number"></TextField>
+		       	    <TextField class="input" hintText=" Phone Number" id="phone_number"></TextField>
 		         </View>
 		         
-		         <View class="radio_container" id="simple">
+		         <View class="radio_container" id="seventh">
 		         	<Label class="gender">Gender</Label>
 		         	 <View onClick="toggle" class="gender-radio"left="15">
 		         	 	<Label text="\uf1db" class="icon_in_text" id="male"></Label>
-		         	 	<Label>Male</Label>
+		         	 	<Label class="labels">Male</Label>
 		         	 </View>
 		         	 
 		         	 <View onClick="toggle" class="gender-radio">
 		         	 	<Label text="\uf1db" class="icon_in_text" id="female"></Label>
-		         	 	<Label>Female</Label>
+		         	 	<Label class="labels">Female</Label>
 		         	 </View>
 		         </View>	
 		         
-		         <View class="small_container-1" >
+		         <View class="small_container-1" id="eight" >
 		         	<View>
 		         		<Label text="\uf1fd" class="icon_in_text"></Label>
-		         		<TextField class="input" hintText="DOB" id="dob" onClick="getpicker"></TextField>	
+		         		<!-- <TextField class="input" hintText="DOB" id="dob" onClick="getpicker"></TextField>	 -->
+		                <Label  class="input" onClick="getpicker" id="dob" text=" Date Of Birth"></Label>
 		           </View>
 		         </View>
 		            
 		         
-		         <View class="small_container-1" id="cont" layout="horizontal">	
+		         <View class="small_container-1" id="cont">	
 		         	<Label text="\uf024" class="icon_in_text"></Label>
-		         	<!-- <TextField class="input" hintText="Country"  onClick="popcountry"></TextField> -->
-		           <!-- <Label class="icon_in_text"  text="Country" id="country_pop" onClick="popcountry"></Label> -->
-		           <!-- <TextField width="30%" class="input" hintText="COUNTRY" id="country_text"></TextField> -->
-		            <Picker id="country" selectionIndicator="true" title="\uf107" class="icon_in_text">
-		            	<PickerRow title="Country"></PickerRow>
-		            	<PickerRow title="AFRICA"  onSingletap="pop_africa"></PickerRow>
-		            	<PickerRow title="INDIA"></PickerRow>
-		            	<PickerRow title="JAPAN" ></PickerRow>
-                    <!-- <Column id="country">
-                    	<Row title="Country"/>
-                        <Row title="INDIA"/>
-                        <Row title="AFRICA"/>
-                        <Row title="RUSSIA"/>
-                    </Column> -->
-                    </Picker>
+		         	<Label class="input pops" id="country" onClick="popcountry">Country</Label>
 		         </View>
 		         
 		         
-		         <View class="small_container-1">
+		         <View class="small_container-1" id="nine">
 		         	<Label text="\uf009" class="icon_in_text"></Label>
-		         	 <Picker id="state" selectionIndicator="true" title="\uf107" class="icon_in_text">
-		         	 	<PickerRow title="state"></PickerRow>
-		         	 	
-		         	 </Picker>
+		         	<Label class="input pops" id="state" onClick="popstate">State</Label>   
 		         </View>
 		         
-		         <View class="small_container-1">
+		         <View class="small_container-1" id="ten">
 		         	<Label text="\uf015" class="icon_in_text"></Label>
+		         	<Label class="input pops" id="city" onClick="popcity">City</Label> 
 		         </View>
 		         
-		         <View class="small_container-1">
+		         <View class="small_container-1" id="eleven">
 		         	<Label text="\uf292" class="icon_in_text"></Label>
-		         	<TextField class="input" hintText="ZIPCODE" id="zipcode"></TextField>		         	
+		         	<TextField class="input" hintText=" ZIPCODE" id="zipcode"></TextField>		         	
 		         </View>
 		         
-		         <View class="small_container-1">
+		         <View class="small_container-1" id="twelth">
 		         	<Label text="\uf041" class="icon_in_text"></Label>
 		         	<TextField class="input" hintText="ADDRESS LINE 1" id="address"></TextField>	
 		         </View>
@@ -103,12 +88,16 @@
 		         	<Label text="\uf041" class="icon_in_text"></Label>
 		         	<TextField class="input" hintText="ADDRESS LINE 2" id="address2"></TextField>	
 		         </View>
-		         <View class="radio_container">
-		         	
+		         <Label class="optional">(optional)</Label>
+		         <View class="radio_container" id="thirtheen">
+		         	 <View onClick="termselect">
+		         	 	<Label text="\uf096" class="icon_in_text" id="terms"></Label>
+		         	 	<Label color="white">I agree the Terms & Conditions</Label>
+		         	 </View>
 		         	
 		         </View>
 		         <View class="radio_container">	         	
-		         <Button id="register"></Button>	
+		         <Button id="register" onClick="validate"></Button>	
 		         </View>
 		         
 			</ScrollView>

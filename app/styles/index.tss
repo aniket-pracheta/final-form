@@ -14,5 +14,7 @@
 	// }
 // },
 ".mainpage":{
-	backgroundColor:"red",
+ 
+	backgroundImage:'images/Android_Master_bg.jpg',
+
 }

@@ -10,7 +10,7 @@
 ".navigation_view":{
 	backgroundColor:"#ff3333",
 	height:"30dp",
-	top:5
+	top:15
 },
 ".ass":{
 	color:"white",
@@ -18,15 +18,16 @@
 },
 "#menu_icon" : {
     font : {
-       fontFamily : "fontawesome-webfont",
-       fontSize : "20sp",    
+       fontFamily : "FontAwesome",
+       fontSize : "20sp", 
    },
+   color:"white",
    left:2
 },
 
 ".container":{
 	layout:"vertical",
-	top:50
+	top:50,
 },
 
 ".small_container-1":{
@@ -51,21 +52,31 @@
 	left:"10%",
 	top: "1px",
 	height:"50dp",
-	// backgroundColor:"green",
+	color:"white",
+	//backgroundColor:"white",
 	//top:5,
 	//font:{fontsize:"2sp"},
+	hintTextColor:"white"
 },
 
 ".icon_in_text":{
 	font : {
-       fontFamily : "fontawesome-webfont",
-       fontSize : "20sp",    
+       fontFamily : "FontAwesome",
+       fontSize : "20sp",
    },
-	left:"3%"
+   color:"white",
+	left:"3%",
+	top:"30%"
 },
 
 ".gender-radio": {
 	width: "33%",
+	
+},
+
+".labels":{
+	
+	color:"white",
 },
 ".gender":{
 	font : {
@@ -74,6 +85,7 @@
    },
    left:"5" ,
    width:"25%",	
+   color:"white"
 },
 
 "#register":{
@@ -86,4 +98,18 @@
 
 }
 
+"#terms":{
+	left:0,
+	},
 
+".optional":{
+	font : {
+      
+       fontSize : "12p",    
+   },
+   color:"white",
+right:"40",	
+},
+".pops":{
+   left:"12%"
+}
