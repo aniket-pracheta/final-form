@@ -1,98 +1,101 @@
 	<Alloy>
 	<Window id="window2">
 		<View class="navigation_view">
-			<Label id="menu_icon" text="\uf053" onClick="goback"></Label>
+			<Label id="menu_icon" text="\uf053" onClick="goback" class="font-icon"></Label>
 			<Label class="ass" >Assignment</Label>
 		</View>
 		
 			<ScrollView class="container">
-		       <View class="small_container-1" id="first">
-		       	    <Label text="\uf007" class="icon_in_text"></Label>
+		       <View class="small_container-1" id="first" top="2%">
+		       	    <Label text="\uf007" class="icon_in_text font-icon"></Label>
 		       	    <TextField class="input" hintText="First Name" id="first_name"></TextField>
 		       </View>	
 		       
 		        <View class="small_container-1" id="second">
-		        	<Label text="\uf007" class="icon_in_text"></Label>
+		        	<Label text="\uf007" class="icon_in_text font-icon"></Label>
 		       	    <TextField class="input" hintText="Last Name" id="last_name"></TextField>
 		        </View>
 		        
 		         <View class="small_container-1" id="third">
-		         	<Label text="\uf023 " class="icon_in_text"></Label>
-		       	    <TextField class="input" hintText="Password" id="password"></TextField>
+		         	<Label text="\uf023 " class="icon_in_text font-icon"></Label>
+		       	    <TextField class="input" hintText="Password" id="password" passwordMask="true"></TextField>
 		         </View>
 		         
 		         <View class="small_container-1" id="fourth">
-		         	<Label text="\uf13e" class="icon_in_text"></Label>
-		       	    <TextField class="input" hintText="Confirm Password" id="re_password"></TextField>
+		         	<Label text="\uf13e" class="icon_in_text font-icon"></Label>
+		       	    <TextField class="input" hintText="Confirm Password" id="re_password" passwordMask="true"></TextField>
 		         </View>
 		         
 		         <View class="small_container-1" id="fifth">
-		         	<Label text="\uf0e0" class="icon_in_text"></Label>
-		       	    <TextField class="input" hintText=" Email" id="email"></TextField>
+		         	<Label text="\uf0e0" class="icon_in_text font-icon"></Label>
+		       	    <TextField class="input" hintText="Email" id="email"></TextField>
 		         </View>
 		         
 		         <View class="small_container-1" id="sixth">
-		         	<Label text="\uf0e0" class="icon_in_text"></Label>
-		       	    <TextField class="input" hintText=" Phone Number" id="phone_number"></TextField>
+		         	<Label text="\uf098 " class="icon_in_text font-icon"></Label>
+		       	    <TextField class="input" hintText="Phone Number" id="phone_number"></TextField>
 		         </View>
 		         
 		         <View class="radio_container" id="seventh">
-		         	<Label class="gender">Gender</Label>
-		         	 <View onClick="toggle" class="gender-radio"left="15">
-		         	 	<Label text="\uf1db" class="icon_in_text" id="male"></Label>
+		         	<Label class="gender" left="2%">Gender</Label>
+		         	 <View onClick="toggle" class="gender-radio" left="15">
+		         	 	<Label text="\uf1db" class="radio-icon" id="male" onClick="toggle"></Label>
 		         	 	<Label class="labels">Male</Label>
 		         	 </View>
 		         	 
 		         	 <View onClick="toggle" class="gender-radio">
-		         	 	<Label text="\uf1db" class="icon_in_text" id="female"></Label>
+		         	 	<Label text="\uf1db" class="radio-icon" id="female" onClick="toggle"></Label>
 		         	 	<Label class="labels">Female</Label>
 		         	 </View>
 		         </View>	
 		         
 		         <View class="small_container-1" id="eight" >
 		         	<View>
-		         		<Label text="\uf1fd" class="icon_in_text"></Label>
+		         		<Label text="\uf1fd" class="icon_in_text font-icon"></Label>
 		         		<!-- <TextField class="input" hintText="DOB" id="dob" onClick="getpicker"></TextField>	 -->
-		                <Label  class="input" onClick="getpicker" id="dob" text=" Date Of Birth"></Label>
+		                <Label  class="input pops" onClick="getpicker" id="dob" text="Date Of Birth" fontSize='60sp'></Label>
 		           </View>
 		         </View>
 		            
 		         
 		         <View class="small_container-1" id="cont">	
-		         	<Label text="\uf024" class="icon_in_text"></Label>
-		         	<Label class="input pops" id="country" onClick="popcountry">Country</Label>
+		         	<Label text="\uf024" class="icon_in_text font-icon"></Label>
+		         	<Label class="input pops" id="country" onClick="popcountry" text="Country"></Label>
 		         </View>
 		         
 		         
 		         <View class="small_container-1" id="nine">
-		         	<Label text="\uf009" class="icon_in_text"></Label>
-		         	<Label class="input pops" id="state" onClick="popstate">State</Label>   
+		         	<Label text="\uf009" class="icon_in_text font-icon"></Label>
+		         	<Label class="input pops" id="state" onClick="popstate" text="State"></Label>   
 		         </View>
 		         
 		         <View class="small_container-1" id="ten">
-		         	<Label text="\uf015" class="icon_in_text"></Label>
-		         	<Label class="input pops" id="city" onClick="popcity">City</Label> 
+		         	<Label text="\uf015" class="icon_in_text font-icon"></Label>
+		         	<Label class="input pops" id="city" onClick="popcity" text="City">City</Label> 
 		         </View>
 		         
 		         <View class="small_container-1" id="eleven">
-		         	<Label text="\uf292" class="icon_in_text"></Label>
+		         	<Label text="\uf292" class="icon_in_text font-icon"></Label>
 		         	<TextField class="input" hintText=" ZIPCODE" id="zipcode"></TextField>		         	
 		         </View>
 		         
 		         <View class="small_container-1" id="twelth">
-		         	<Label text="\uf041" class="icon_in_text"></Label>
+		         	<Label text="\uf041" class="icon_in_text font-icon"></Label>
 		         	<TextField class="input" hintText="ADDRESS LINE 1" id="address"></TextField>	
 		         </View>
 		         
 		         <View class="small_container-1">
-		         	<Label text="\uf041" class="icon_in_text"></Label>
+		         	<Label text="\uf041" class="icon_in_text font-icon"></Label>
 		         	<TextField class="input" hintText="ADDRESS LINE 2" id="address2"></TextField>	
 		         </View>
-		         <Label class="optional">(optional)</Label>
+		         <View class="thin-container">
+		         	<Label class="optional">(optional)</Label>
+		         </View>
+		         
 		         <View class="radio_container" id="thirtheen">
 		         	 <View onClick="termselect">
-		         	 	<Label text="\uf096" class="icon_in_text" id="terms"></Label>
-		         	 	<Label color="white">I agree the Terms & Conditions</Label>
+		         	 	<Label text="\uf096" class="font-icon" id="terms"></Label>
+		         	 	<Label color="white" left="15%">I agree the Terms & Conditions</Label>
 		         	 </View>
 		         	
 		         </View>

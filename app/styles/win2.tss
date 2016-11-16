@@ -6,21 +6,32 @@
 	backgroundImage:'images/Android_Master_bg.jpg'
  },
 
+".font-icon[platform=ios]":{
+	font : {
+      fontFamily : "FontAwesome",
+       fontSize : "20sp",
+   },
+},
+
+".font-icon[platform=android]":{
+	font : {
+      fontFamily : "fontawesome-webfont",
+       fontSize : "20sp",
+   },
+},
 
 ".navigation_view":{
 	backgroundColor:"#ff3333",
 	height:"30dp",
-	top:15
+	top:17
 },
 ".ass":{
 	color:"white",
 	center:"0dp"
 },
+
 "#menu_icon" : {
-    font : {
-       fontFamily : "FontAwesome",
-       fontSize : "20sp", 
-   },
+   fontSize : "10sp",
    color:"white",
    left:2
 },
@@ -28,6 +39,7 @@
 ".container":{
 	layout:"vertical",
 	top:50,
+	bottom:15
 },
 
 ".small_container-1":{
@@ -43,7 +55,7 @@
 	top:"10dp",
 	left:"10%",
 	right:"10%",
-	height:"40dp",
+	height:"37dp",
 	//borderColor:"white",
 	layout: "horizontal"
 },
@@ -53,6 +65,7 @@
 	top: "1px",
 	height:"50dp",
 	color:"white",
+	focusable :"true",
 	//backgroundColor:"white",
 	//top:5,
 	//font:{fontsize:"2sp"},
@@ -60,29 +73,40 @@
 },
 
 ".icon_in_text":{
-	font : {
-       fontFamily : "FontAwesome",
-       fontSize : "20sp",
-   },
+
    color:"white",
 	left:"3%",
-	top:"30%"
+	top:"31%"
 },
+
+// ".radio-icon":{
+   // color:"white",
+	// left:"1%",
+	// top:0,
+	// //top:"20%"
+// },
 
 ".gender-radio": {
 	width: "33%",
-	
+	height:"70%",
+	layout: "horizontal"
+	//borderColor:"white"
 },
 
-".labels":{
-	
+".labels":{	
+	font : {
+
+   fontSize : "19sp",    
+    },
 	color:"white",
+
+	top:0
 },
 ".gender":{
-	font : {
-       fontFamily : "fontawesome-webfont",
-       fontSize : "19sp",    
-   },
+font : {
+
+   fontSize : "19sp",    
+    },
    left:"5" ,
    width:"25%",	
    color:"white"
@@ -99,7 +123,7 @@
 }
 
 "#terms":{
-	left:0,
+	left:"5%",
 	},
 
 ".optional":{
@@ -108,8 +132,37 @@
        fontSize : "12p",    
    },
    color:"white",
-right:"40",	
+right:"0",	
 },
 ".pops":{
+	font : {
+       fontSize : "19sp",    
+   },
    left:"12%"
-}
+},
+".thin-container":{
+   
+	left:"10%",
+	right:"10%",
+	height:"20dp",
+	//borderColor:"white",	
+},
+".radio-icon[platform=ios]":{
+	font : {
+      fontFamily : "FontAwesome",
+       fontSize : "21sp",
+   },
+      color:"white",
+	left:"1%",
+	top:0,
+},
+
+".radio-icon[platform=android]":{
+	font : {
+      fontFamily : "fontawesome-webfont",
+       fontSize : "21sp",
+   },
+      color:"white",
+	left:"1%",
+	top:0,
+},
